@@ -1,0 +1,113 @@
+[
+  {
+    "id": 1,
+    "camera": "CAM-001",
+    "local": "Entrada principal",
+    "setor": "Recepcao",
+    "tipo_evento": "movimento suspeito",
+    "severidade": "media",
+    "data_hora": "2026-06-25T08:12:00-03:00",
+    "status": "tratado",
+    "descricao": "Movimento detectado fora do horario comercial."
+  },
+  {
+    "id": 2,
+    "camera": "CAM-002",
+    "local": "Estacionamento norte",
+    "setor": "Perimetro",
+    "tipo_evento": "presenca nao identificada",
+    "severidade": "alta",
+    "data_hora": "2026-06-25T09:40:00-03:00",
+    "status": "em analise",
+    "descricao": "Pessoa sem cracha permaneceu por mais de 10 minutos na area."
+  },
+  {
+    "id": 3,
+    "camera": "CAM-003",
+    "local": "Corredor administrativo",
+    "setor": "Administrativo",
+    "tipo_evento": "porta aberta",
+    "severidade": "baixa",
+    "data_hora": "2026-06-25T10:05:00-03:00",
+    "status": "tratado",
+    "descricao": "Porta foi deixada aberta e o operador registrou o fechamento."
+  },
+  {
+    "id": 4,
+    "camera": "CAM-004",
+    "local": "Deposito de equipamentos",
+    "setor": "Logistica",
+    "tipo_evento": "acesso indevido",
+    "severidade": "alta",
+    "data_hora": "2026-06-25T11:18:00-03:00",
+    "status": "escalado",
+    "descricao": "Acesso fora do horario autorizado com acionamento do supervisor."
+  },
+  {
+    "id": 5,
+    "camera": "CAM-005",
+    "local": "Polo de carga",
+    "setor": "Operacao",
+    "tipo_evento": "veiculo parado",
+    "severidade": "media",
+    "data_hora": "2026-06-25T12:33:00-03:00",
+    "status": "tratado",
+    "descricao": "Veiculo permaneceu estacionado alem do tempo previsto."
+  },
+  {
+    "id": 6,
+    "camera": "CAM-006",
+    "local": "Sala de servidores",
+    "setor": "TI",
+    "tipo_evento": "temperatura elevada",
+    "severidade": "alta",
+    "data_hora": "2026-06-25T13:15:00-03:00",
+    "status": "em analise",
+    "descricao": "Sensor registrou aumento de temperatura acima do limite seguro."
+  },
+  {
+    "id": 7,
+    "camera": "CAM-007",
+    "local": "Acesso lateral",
+    "setor": "Perimetro",
+    "tipo_evento": "falha de iluminacao",
+    "severidade": "baixa",
+    "data_hora": "2026-06-25T14:07:00-03:00",
+    "status": "tratado",
+    "descricao": "Area externa ficou sem iluminacao e a equipe de manutencao foi acionada."
+  },
+  {
+    "id": 8,
+    "camera": "CAM-008",
+    "local": "Recepcao secundaria",
+    "setor": "Recepcao",
+    "tipo_evento": "fila acima do limite",
+    "severidade": "media",
+    "data_hora": "2026-06-25T15:26:00-03:00",
+    "status": "tratado",
+    "descricao": "Fluxo de pessoas acima do normal foi registrado para ajuste operacional."
+  },
+  {
+    "id": 9,
+    "camera": "CAM-009",
+    "local": "Corredor B",
+    "setor": "Administrativo",
+    "tipo_evento": "objeto abandonado",
+    "severidade": "alta",
+    "data_hora": "2026-06-25T16:44:00-03:00",
+    "status": "escalado",
+    "descricao": "Objeto sem identificacao permaneceu na area por tempo prolongado."
+  },
+  {
+    "id": 10,
+    "camera": "CAM-010",
+    "local": "Portao de carga",
+    "setor": "Operacao",
+    "tipo_evento": "tentativa de abertura",
+    "severidade": "alta",
+    "data_hora": "2026-06-25T17:55:00-03:00",
+    "status": "em analise",
+    "descricao": "Sensor de abertura acionado sem autorizacao no fechamento do turno."
+  }
+]
+
