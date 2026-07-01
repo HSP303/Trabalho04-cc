@@ -15,7 +15,9 @@ def create_app() -> Flask:
     app = Flask(__name__)
     app.config["APP_NAME"] = APP_NAME
     app.config["APP_VERSION"] = APP_VERSION
-    app.config["DATA_FILE"] = Path(__file__).resolve().parent / "data" / "alertas.json"
+    app.config["DATA_FILE"] = (
+        Path(__file__).resolve().parent / "data" / "alertas.json"
+    )
 
     @app.get("/status")
     def status() -> tuple:
@@ -96,4 +98,3 @@ def error_response(message: str, details: str | None, status_code: int) -> tuple
 
 
 app = create_app()
-
