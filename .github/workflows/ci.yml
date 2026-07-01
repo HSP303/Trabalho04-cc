@@ -1,0 +1,48 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Faz o checkout do codigo fonte do repositório.
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Configura o Python usado no pipeline.
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # Instala as dependencias de desenvolvimento, incluindo testes e lint.
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements-dev.txt
+
+      # Executa a analise estatica com Ruff.
+      - name: Run lint
+        run: ruff check api
+
+      # Verifica o formato do codigo com Ruff.
+      - name: Check formatting
+        run: ruff format --check api
+
+      # Executa os testes e gera relatorio de cobertura.
+      - name: Run tests with coverage
+        run: pytest --cov=api --cov-report=term-missing --cov-report=xml --cov-report=html
+
+      # Publica os artefatos de cobertura para consulta no GitHub Actions.
+      - name: Upload coverage artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: coverage-report
+          path: |
+            coverage.xml
+            htmlcov/
+
